@@ -839,14 +839,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('Filter Button',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
+                                         callback_data=f'setgs#button#{settings["button"]
                     InlineKeyboardButton('Single' if settings["button"] else 'Double',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
+                                         callback_data=f'setgs#button#{settings["button"]
                 ],
                 [
-                    InlineKeyboardButton('Bot PM', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('Bot PM', callback_data=f'setgs#botpm#{settings["botpm"],
                     InlineKeyboardButton('✅ Yes' if settings["botpm"] else '✅ Yes',
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
+                                         callback_data=f'setgs#botpm#{settings["botpm"]')
                 ],
                 [
                     InlineKeyboardButton('File Secure',
